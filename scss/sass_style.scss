@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+$color1: #00ffff;
+$color2: #8a2be2;
+
+main {
+    background-color: burlywood;
+}
+
+.color-1 {
+    background-color: $color1;
+}
+
+.color-2 {
+    background-color: $color2;
+}
