@@ -3,7 +3,7 @@
 $color1: #00ffff;
 $color2: #8a2be2;
 
-main {
+body {
     background-color: burlywood;
 }
 
@@ -13,4 +13,15 @@ main {
 
 .color-2 {
     background-color: $color2;
+}
+
+a.contact-info{
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: underline;
+        color: blue;
+    }
 }

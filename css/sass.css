@@ -1,4 +1,4 @@
-main {
+body {
   background-color: burlywood;
 }
 
@@ -8,6 +8,17 @@ main {
 
 .color-2 {
   background-color: #8a2be2;
+}
+
+a.contact-info {
+  font-weight: 500;
+}
+a.contact-info:hover {
+  text-decoration: underline;
+}
+a.contact-info:active {
+  text-decoration: underline;
+  color: blue;
 }
 
 /*# sourceMappingURL=sass.css.map */

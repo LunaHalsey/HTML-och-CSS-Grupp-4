@@ -7,10 +7,51 @@
 }
 
 
+body {
+    width: 100vw;
+}
+
 /* main */
 main {
     margin-top: 4rem;
     padding: 1rem;
+}
+
+.row-css {
+/*width: 100vw;*/
+}
+
+.row-css::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    /* padding: 15px; */
+}
+
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100vw;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
 /* header nav meny */
@@ -148,8 +189,112 @@ a.nav, a.logo {
     }
 }
 
+.evenemang-list-center {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.evenemang-list {
+    display: inline-flex;
+    border: #333 solid 1px;
+    margin-bottom: 2rem;
+}
 
 
 
+.ev-list-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: #333 solid 1px;
+}
 
+.ev-last-list-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: none;
+}
+
+.ev-h2-list-item {
+    font-size: 1.6rem;
+    padding: 0.4rem
+}
+
+@media (max-width: 700px){
+    .evenemang-list{
+        display: block;
+        border: #333 solid 1px;
+        margin-bottom: 2rem;
+    }
+
+    .ev-list-item {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem;
+        border-bottom: #333 solid 1px;
+        border-right: none;
+    }
+
+    .ev-last-list-item {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem;
+        border-bottom: #333 solid 1px;
+        border-right: none;
+    }
+}
+
+.h1-margin {
+    margin-bottom: 2rem;
+}
+
+.h2-medium {
+    font-size: 2rem;
+}
+
+.kontakt-big-div {
+    display: flex;
+
+    align-items: center;
+}
+
+.kontakt-div {
+
+
+}
+
+.kontakt-tid-div {
+    text-align: center;
+
+}
+
+.kontakt-adress-div {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.kontakt-ul {
+    margin-bottom: 2rem;
+}
+
+.map {
+    width: 100%;
+    height: 100%
+}
+
+
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+
+#map {
+    margin-top: 2rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: grey;
+}
 
