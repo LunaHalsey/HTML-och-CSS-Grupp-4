@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evenemang</title>
-
+    <meta name="description" content="Här kan man hitta allt inom böcker och poesi"/>
     <!-- css -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link href="css/tailwind.css" rel="stylesheet">
     <link href="css/sass.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
@@ -47,19 +47,22 @@
                 </ul></nav></header>
 
 
+<!-- main page content div -->
 <main>
 
+    <!-- content border "shadow" -->
     <div class="main-section-border">
+        <!-- content -->
         <section class="main-section">
     <h1 class="text-5xl font-bold underline text-center h1-margin">
         Besök eller kontakta oss idag
     </h1>
 
     <div class="row-css">
+        <!-- left side content on contact page -->
 <div class="col-6">
 
-    <!-- <div class="kontakt-div"> -->
-        <div class="kontakt-tid-div">
+        <article class="kontakt-tid-div">
             <h2 class="h2-medium">Öppettider</h2>
             <ul class="kontakt-ul">
                 <li>Måndag: 9-17</li>
@@ -79,11 +82,11 @@
                 <li><i class="fa-brands fa-square-twitter"></i> <a href="https://twitter.com" class="contact-info">Twitter</a></li>
                 <li><i class="fa-solid fa-envelope"></i> <a class="contact-info" href="mailto:kontakt@parmarochpoesi.se">kontakt@parmarochpoesi.se</a></li>
             </ul>
-
+                <!-- javascript eventlistener popup div -->
             <h2 class="h2-medium pt-5">Anställda</h2>
             <button id="openButton">Se våra anställda</button>
                 <div id="popup" class="popup">
-                    <section class="popup-content">
+                    <article class="popup-content">
 
                         <span class="close" id="closeButton">&times;</span>
                         <p></p>
@@ -134,13 +137,15 @@
 
 
                         </div>
-                    </section>
+                    </article>
                 </div>
                 <script src="js/script.js"></script>
-        </div>
+        </article>
 </div>
+<!-- right side content on contact page  -->
 <div class="col-6">
-        <div class="kontakt-adress-div">
+        <!-- javascript map -->
+        <section class="kontakt-adress-div">
             <div class="kontakt-adress-map">
             <h2 class="h2-medium">Hitta till oss</h2>
             <p>Drottninggatan 4, 111 51, Stockholm</p>
@@ -158,7 +163,7 @@
         </div>
 
 
-    </div>
+        </section>
 </div>
     </div>
 
