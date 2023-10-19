@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pärmar och Poesi</title>
+	<!-- Meta tag tillagd -->
+	<meta name="description" content="Här kan man hitta allt inom böcker och poesi"/>
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon-pop/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-pop/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="faviconpop/favicon-16x16.png">
+	<link rel="manifest" href="favicon-pop/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="style-sta/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+
+	<header>
+		<nav>
+
+			<!--Logotyp och länk till förstasidan-->
+			<a href="index.html" name="Förstasidan">
+				<img src="img/pop-logo3.png" width="200" height="75" alt="Pärmar och poesis logotyp">
+			</a>
+
+			<!--Knapp för att visa menyn-->
+			<button onclick="toggleClass()" class="menu-button" type="button" id="menuButton" name="Meny">
+				<i class="fas fa-bars menu-icon"></i>
+			</button>
+
+			<!--Dropdownmeny för mobil-->
+				<menu id="menuDropdown">
+					<li><a href="nyheter.html" name="Nyheter">NYHETER</a></li>
+					<li><a href="bocker.html" name="Böcker">BÖCKER</a></li>
+					<li><a href="evenemang.html" name="Evenemang">EVENEMANG</a></li>
+					<li><a href="om-oss.html" name="Om">OM OSS</a></li>
+					<li><a href="kontakt.html" name="Kontakt">KONTAKT</a></li>
+				</menu>
+
+		</nav>
+	</header>
+
+	<main>
+
+			<article class="article-welcome">
+			<!--Första bilden. Byter mellan bilder beroende på skärmbrädd-->
+			<picture>
+				<!-- tagit bort alt tag från source -->
+				<source srcset="img/pexels-ksenia-chernaya-3952076.jpg" media="(min-width: 769px)"/>
+				<!-- procent i img width har ändrats till width: 100% i css -->
+				<img class="imgfix" src="img/pexels-ksenia-chernaya-3952071.jpg" width="100" alt="Bild av bokhandeln" />
+			</picture>
+
+			<!-- ändrat span till en div och ändrad css-->
+			<!-- <span> -->
+			<div class="span-div">
+
+
+				<h1>Välkommen till Pärmar och Poesi</h1>
+
+				<p>
+					Din lokala bokhandel och mötesplats med ett stort utbud av böcker inom många skönlitterära genrer och poesi. Vi säljer både nytt och begagnat. Vi annordnar också många evenemang som t.ex. gästande författare som läser ur och signerar sina verk. Vi har också poesiträffar där vi både erbjuder workshops där du kan lära dig skriva poesi och tillfällen där du kan läsa upp dina verk för andra.
+				</p>
+
+			</div>
+		<!-- </span> -->
+			</article>
+
+
+			<!--Öppettider-->
+			<article class="article-2">
+				<!-- procent i img width har ändrats till width: 100% i css -->
+				<img class="imgfix" src="img/pexels-lisa-fotios-1516983.jpg" alt="Bok och kaffekopp" width="100">
+
+							<h3>Öppettider</h3>
+
+							<!--Beskrivande lista, semantiska fördelar gentemot en vanlig lista-->
+							<dl aria-label="Öppettider">
+								<dt>Måndag till Torsdag</dt><dd>9 till 17</dd>
+								<dt>Fredag</dt><dd>9 till 16</dd>
+								<dt>Lördag</dt><dd>10 till 15</dd>
+								<dt>Söndag</dt><dd>Stängt</dd>
+							</dl>
+
+			</article>
+
+<!--------Böcker-->
+			<article class="article-2">
+
+					<a href="bocker.html" name="Böcker">Nya Böcker</a>
+			</article>
+
+<!-------Nästa evenemang-->
+			<article class="article-2">
+				<!-- procent i img width har ändrats till width: 100% i css -->
+				<img class="imgfix" src="img/pexels-miguel.jpg" width="100" alt="Skrivbok">
+
+				<h3>Nästa evenemang</h3>
+
+				<p>
+					<b>
+						<!--Datum och tid-->
+						<time datetime="2023-10-19T17:00">19/10 kl. 17.00</time>
+					</b><br><br>
+					Kärleksromanskväll<br><br>
+
+					Utforska de mest romantiska berättelserna genom tiderna.
+				</p>
+
+				<a href="evenemang.html" name="Evenemang">Evenemang</a>
+
+			</article>
+
+
+	</main>
+
+	<footer>
+			<a href="kontakt.html" target="_blank" name="Kontakt"><i class="fas fa-address-book"></i></a>
+			<a href="mailto:info@parmarochpoesi.se" target="_blank" name="info@parmarochpoesi.se"><i class="fas fa-at"></i></a>
+			<a href="tel:08123456" target="_blank" name="Telefonnummer:08123456"><i class="fas fa-phone"></i></a>
+			<a href="http://instagram.com/parmarochpoesi" target="_blank" name="Instagram"><i class="fab fa-instagram"></i></a>
+			<a href="http://m.facebook.com/parmar.och.poesi" target="_blank" name="Facebook"><i class="fab fa-facebook-square"></i></a>
+			<a href="http://m.me/parmar.och.poesi" target="_blank" name="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+			<a href="http://x.com/ParmarOchPoesi" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
+	</footer>
+
+<!--Javascript för att öppna menyn i mobilläge-->
+	<script>
+		var menuButton = document.querySelector("#menuButton");
+		var menuDropdown = document.querySelector("#menuDropdown");
+
+				menuButton.addEventListener("click", function () {
+					menuDropdown.classList.toggle("open");
+					});
+
+	</script>
+</body>
+</html>
