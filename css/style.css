@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+
+
+.placeholder-height {
+    height: 2000px;
+}
+
+
+body {
+    width: 100vw;
+}
+
+/* main */
+main {
+    margin-top: 7rem;
+    padding: 1rem;
+}
+
+.row-css {
+/*width: 100vw;*/
+}
+
+.row-css::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    /* padding: 15px; */
+}
+
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100vw;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/* header nav meny *//*
+a.nav, a.logo {
+    color: #f2f2f2;
+    }
+.header ul li a{
+    color: #f2f2f2;
+}
+.header {
+    background-color: #333;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    height: 4rem;
+    margin-bottom: 4rem;
+    top: 0;
+}
+.logoimg {
+    width: 4rem;
+    padding: 0;
+    position: relative;
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #333;
+}
+.header ul a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+    text-align: center;
+}
+.header ul a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+}
+.header .logo {
+    text-decoration: none;
+}
+.header .logo {
+    float: left;
+    display: inline-flex;
+    padding-left: 1rem;
+}
+.logoh1 {
+    margin: 0;
+    margin-left: 1rem;
+    font-family: "Gotham Rounded", sans-serif;
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.logoh1:hover {
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: #333;
+}
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+    background: #f2f2f2;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+    background: #f2f2f2;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.header .menu-icon .nav-icon:after {
+    background: #f2f2f2;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+.header .menu-btn {
+    display: none;
+}
+.header .menu-btn:checked ~ .menu {
+    max-height: 1000px;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+@media (min-width: 900px){
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+} */
+
+.evenemang-list-center {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.evenemang-list {
+    display: inline-flex;
+    border: #262626 solid 1px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ev-list-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: #262626 solid 1px;
+}
+
+.ev-last-list-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-right: none;
+}
+
+.ev-h2-list-item {
+    /* font-size: 1.6rem; */
+    padding: 0.4rem
+}
+
+@media (max-width: 768px){
+    .evenemang-list{
+        display: block;
+        border: #262626 solid 1px;
+        margin-bottom: 2rem;
+    }
+
+    .ev-list-item {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem;
+        border-bottom: #262626 solid 1px;
+        border-right: none;
+    }
+
+    .ev-last-list-item {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin: 1rem;
+        border-bottom: #262626 solid 1px;
+        border-right: none;
+    }
+}
+
+.h1-margin {
+    margin-bottom: 2rem;
+}
+
+.h2-medium {
+    font-size: 2rem;
+}
+
+.kontakt-big-div {
+    display: flex;
+
+    align-items: center;
+}
+
+.kontakt-div {
+
+
+}
+
+.kontakt-tid-div {
+    text-align: center;
+
+}
+
+.kontakt-adress-div {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.kontakt-ul {
+    margin-bottom: 2rem;
+}
+
+.map {
+    width: 100%;
+    height: 100%
+}
+
+
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+
+#map {
+    margin-top: 2rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #808080;
+}
+
+/* javascript popup */
+.popup {
+    display: none; /*CHANGE TO WORK!!!!!!*/
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#openButton {
+    padding: 1rem 2rem 1rem 2rem;
+    border: #262626  solid 1px;
+    background-color: #ededed;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+#openButton:hover {
+    padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+    background-color: #d1d1d1;
+    border: #262626 solid 3px;
+    margin-bottom: 1.95rem;
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.popup-content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popup-h2 {
+    font-size: 1.5rem;
+}
+.popup-content-div > div {
+    flex: 50%;
+}
+.popup-content-info {
+    padding: 1rem;
+}
+
+#closeButton {
+    font-size: 2rem;
+}

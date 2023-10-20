@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyheter - Pärmar och Poesi</title>
+    <!-- meta seo tag tillagd -->
+    <meta name="description" content="Nyheter om Pärmar och Poesi bokhandel">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-pop/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-pop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconpop/favicon-16x16.png">
+    <link rel="manifest" href="favicon-pop/site.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="style-sta/style.css">
+    <link rel="stylesheet" type="text/css" href="style-oli/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+		<nav>
+
+			<!--Logotyp och länk till förstasidan-->
+			<a href="index.html" name="Förstasidan">
+				<img src="img/pop-logo3.png" width="200" height="75" alt="Pärmar och poesis logotyp">
+			</a>
+
+			<!--Knapp för att visa menyn-->
+			<button onclick="toggleClass()" class="menu-button" type="button" id="menuButton" name="Meny">
+				<i class="fas fa-bars menu-icon"></i>
+			</button>
+
+			<!--Dropdownmeny för mobil-->
+				<menu id="menuDropdown">
+					<li><a href="nyheter.html" name="Nyheter">NYHETER</a></li>
+					<li><a href="#" name="Böcker">BÖCKER</a></li>
+					<li><a href="evenemang.html" name="Evenemang">EVENEMANG</a></li>
+					<li><a href="om-oss.html" name="Om">OM OSS</a></li>
+					<li><a href="kontakt.html" name="Kontakt">KONTAKT</a></li>
+				</menu>
+
+		</nav>
+	</header>
+
+
+
+    <main>
+        <section class="section-valkommen">
+
+
+            <article>
+                <!-- <meta name="description" content="Det senaste nytt om böcker och poesi"> -->
+
+                <section class="section-news">
+                    <!-- ingen slut tag fanns-->
+                    <div class="news-container">
+                        <div class="news-article">
+                            <h1>Bohdan Piasecki vinner bäst framförda dikt</h1>
+                            <p>I år introducerade Forward-priserna för poesi för första gången en kategori för att hedra såväl framförd som skriven poesi. Den polskfödde, Birmingham-baserade poeten och professorn Bohdan Piasecki har blivit den första vinnaren av prisets nya pris för "bästa singelpoem - framförd" för sin dikt Almost Certainly.</p>
+                        </div>
+
+                        <div class="news-article">
+                            <h1>Författaren Arundhati Roy kan komma att åtalas i Indien under 2010 års tal</h1>
+                            <p>Booker-priset vinnaren Arundhati Roy kan åtalas för ett tal 2010 om Kashmir, enligt rapporter i Indien.
+
+                                Roy, 61, är en av Indiens mest kända levande författare men hennes författarskap och aktivism, inklusive hennes kritik av premiärministern Narendra Modis regering, har gjort henne till en polariserande figur i landet.
+
+                                En brottsanmälan som anklagade henne och flera andra för uppvigling hade försvunnit i Indiens notoriskt straffrättssystem sedan det lämnades in 2010.</p>
+
+
+
+                        </div>
+                        <div class="news-article">
+                            <h1>Nobelpristagaren Louise Glück är död</h1>
+                            <p>Louise Glück tilldelades Nobelpriset i litteratur 2020 ”för hennes omisskännliga poetiska röst, som med sträng skönhet gör den enskilda människans existens universell”.
+
+                                Glück debuterade som poet med diktsamlingen Firstborn 1968 och har sedan dess publicerat omkring 15 diktsamlingar och ett stort antal essäer. Hon har även tilldelats Pulitzerpriset för poesi, National Book Award och Tranströmerpriset.</p>
+
+
+
+
+                    </div>
+                    <div class="news-aside">
+                        <!-- <meta name="description" content="Korta nyheter om Pärmar och Poesi bokhandel"> -->
+                        <!-- ändraded till att använda css istället för center -->
+                        <!--<center>--><img class="img-owl-center" src="img/owl.jpg" alt="Poesi och Ugglan böcker"><!--</center>-->
+                        <p>
+                           Pärmar och Poesi<br> extra öppet<br> den 25
+                           när den <br>nya boken släpps.
+                           <br><br>
+                           25% rabatt på böcker<br> utgiven mellan 2007-2010
+                        </p>
+                    </div>
+                </div>
+                    <!-- slut taggar saknades -->
+                </section>
+
+
+            </article>
+        </section>
+
+
+
+    </main>
+
+<!--Footer----------------------------------->
+
+<footer>
+    <!--Länkar till sociala medier som öppnas i en ny flik/fönster, länk för att öppna ett nytt epostmeddelande, länk för att ringa på mobiltelefon-->
+    <a href="kontakt.html" target="_blank" name="Kontakt"><i class="fas fa-address-book"></i></a>
+    <a href="mailto:info@parmarochpoesi.se" target="_blank" name="info@parmarochpoesi.se"><i class="fas fa-at"></i></a>
+    <a href="tel:08123456" target="_blank" name="Telefonnummer:08123456"><i class="fas fa-phone"></i></a>
+    <a href="http://instagram.com/parmarochpoesi" target="_blank" name="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="http://m.facebook.com/parmar.och.poesi" target="_blank" name="Facebook"><i class="fab fa-facebook-square"></i></a>
+    <a href="http://m.me/parmar.och.poesi" target="_blank" name="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+    <a href="http://x.com/ParmarOchPoesi" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
+</footer>
+
+
+<!--Javascript för att öppna menyn i mobilläge-->
+<script>
+var menuButton = document.querySelector("#menuButton");
+var menuDropdown = document.querySelector("#menuDropdown");
+
+        menuButton.addEventListener("click", function () {
+            menuDropdown.classList.toggle("open");
+            });
+
+</script>
+
+
+</body>
+
+</html>

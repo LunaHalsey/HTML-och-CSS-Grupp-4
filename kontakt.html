@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Pärmar och Poesi</title>
+    <meta name="description" content="Kontakta oss på Pärmar och Poesi"/>
+    <!-- css -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/sass.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style-sta/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- javascript -->
+    <script async type="module" src="js/javascript.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-pop/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-pop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-pop/favicon-16x16.png">
+    <link rel="manifest" href="favicon-pop/site.webmanifest">
+
+</head>
+<body>
+
+    <header class="leading-4">
+		<nav>
+
+			<!--Logotyp och länk till förstasidan-->
+			<a href="index.html" name="Förstasidan">
+				<img class="logoimage" src="img/pop-logo3.png" width="200" height="75" alt="Pärmar och poesis logotyp">
+			</a>
+
+			<!--Knapp för att visa menyn-->
+			<button onclick="toggleClass()" class="menu-button" type="button" id="menuButton" name="Meny">
+				<i class="fas fa-bars menu-icon"></i>
+			</button>
+
+			<!--Dropdownmeny för mobil-->
+				<menu id="menuDropdown">
+					<li><a href="nyheter.html" name="Nyheter">NYHETER</a></li>
+					<li><a href="#" name="Böcker">BÖCKER</a></li>
+					<li><a href="evenemang.html" name="Evenemang">EVENEMANG</a></li>
+					<li><a href="om-oss.html" name="Om">OM OSS</a></li>
+					<li><a href="kontakt.html" name="Kontakt">KONTAKT</a></li>
+				</menu>
+
+		</nav>
+	</header>
+
+    <main>
+    <!-- content border "shadow" -->
+    <!-- <div class="main-section-border"> -->
+        <!-- content -->
+        <section class="main-section">
+    <h1 class="text-5xl font-bold underline text-center h1-margin">
+        Besök eller kontakta oss idag
+    </h1>
+
+    <div class="row-css">
+        <!-- left side content on contact page -->
+<div class="col-6">
+
+        <article class="kontakt-tid-div">
+            <h2 class="h2-medium">Öppettider</h2>
+            <ul class="kontakt-ul">
+                <li>Måndag: 9-17</li>
+                <li>Tisdag: 9-17</li>
+                <li>Onsdag: 9-17</li>
+                <li>Torsdag: 9-17</li>
+                <li>Fredag: 9-16</li>
+                <li>lördag: 10-15</li>
+                <li>Söndag: Stängt</li>
+            </ul>
+
+            <h2 class="h2-medium">Kontakt</h2>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+468123456">08 123 456</a></li>
+                <li><i class="fa-brands fa-square-instagram"></i> <a href="https://www.instagram.com/" class="contact-info">Instagram</a></li>
+                <li><i class="fa-brands fa-square-facebook"></i> <a href="https://www.facebook.com/" class="contact-info">Facebook</a></li>
+                <li><i class="fa-brands fa-square-twitter"></i> <a href="https://twitter.com" class="contact-info">Twitter</a></li>
+                <li><i class="fa-solid fa-envelope"></i> <a class="contact-info" href="mailto:kontakt@parmarochpoesi.se">kontakt@parmarochpoesi.se</a></li>
+            </ul>
+                <!-- javascript eventlistener popup div -->
+            <h2 class="h2-medium pt-5">Anställda</h2>
+            <button id="openButton">Se våra anställda</button>
+                <div id="popup" class="popup">
+                    <article class="popup-content">
+
+                        <span tabindex="0" class="close" id="closeButton">&times;</span>
+                        <p></p>
+                        <div class="popup-content-div">
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Anna Anderson</h2>
+                                <ul>
+                                    <li>Grundare/Ägare</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-686 46 57</a></li>
+                                </ul>
+                            </div>
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Per Persson</h2>
+                                <ul>
+                                    <li>Säljare</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-876 54 21</a></li>
+                                </ul>
+                            </div>
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Erik Eriksson</h2>
+                                <ul>
+                                    <li>Forskare</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-952 54 32</a></li>
+                                </ul>
+                            </div>
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Linda Lindström</h2>
+                                <ul>
+                                    <li>Säljare</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-238 19 73</a></li>
+                                </ul>
+                            </div>
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Alex Sjöberg</h2>
+                                <ul>
+                                    <li>IT</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-879 24 86</a></li>
+                                </ul>
+                            </div>
+                            <div class="popup-content-info">
+                                <h2 class="popup-h2">Kim Almquist</h2>
+                                <ul>
+                                    <li>Webbredaktör</li>
+                                    <li><i class="fa-solid fa-phone"></i> <a class="contact-info" href="tel:+4670123456">070-687 23 97</a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </article>
+                </div>
+                <script src="js/script.js"></script>
+        </article>
+</div>
+<!-- right side content on contact page  -->
+<div class="col-6">
+        <!-- javascript map -->
+        <section class="kontakt-adress-div">
+            <div class="kontakt-adress-map">
+            <h2 class="h2-medium">Hitta till oss</h2>
+            <p>Drottninggatan 4, 111 51, Stockholm</p>
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <script>
+                (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+                    key: "AIzaSyDt2REOQ9ETs3gIimAYciV98Yur8t7Od2w",
+                    v: "weekly",
+                // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+                // Add other bootstrap parameters as needed, using camel case.
+                });
+            </script>
+
+        </div>
+
+
+        </section>
+</div>
+    </div>
+
+</section>
+    <!-- </div> -->
+</main>
+<!--Footer----------------------------------->
+
+<footer>
+    <!--Länkar till sociala medier som öppnas i en ny flik/fönster, länk för att öppna ett nytt epostmeddelande, länk för att ringa på mobiltelefon-->
+    <a href="kontakt.html" target="_blank" name="Kontakt"><i class="fas fa-address-book"></i></a>
+    <a href="mailto:info@parmarochpoesi.se" target="_blank" name="info@parmarochpoesi.se"><i class="fas fa-at"></i></a>
+    <a href="tel:08123456" target="_blank" name="Telefonnummer:08123456"><i class="fas fa-phone"></i></a>
+    <a href="http://instagram.com/parmarochpoesi" target="_blank" name="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="http://m.facebook.com/parmar.och.poesi" target="_blank" name="Facebook"><i class="fab fa-facebook-square"></i></a>
+    <a href="http://m.me/parmar.och.poesi" target="_blank" name="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+    <a href="http://x.com/ParmarOchPoesi" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
+</footer>
+
+
+<!--Javascript för att öppna menyn i mobilläge-->
+<script>
+var menuButton = document.querySelector("#menuButton");
+var menuDropdown = document.querySelector("#menuDropdown");
+
+        menuButton.addEventListener("click", function () {
+            menuDropdown.classList.toggle("open");
+            });
+
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+</body>
+</html>

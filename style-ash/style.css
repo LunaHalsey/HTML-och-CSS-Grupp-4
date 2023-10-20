@@ -1,0 +1,74 @@
+/* Ashti css */
+
+section {
+    display: flex;
+    flex-direction: row;
+    background-color: #c2c2c2;
+    min-height: 375px;
+    width: 100%;
+    /* margin: 3%; */
+    padding: 3%;
+
+}
+
+.butikbild {
+    width: 100%;
+    margin-top: 30px;
+    aspect-ratio: 564/846;
+}
+
+.content-box {
+    border: 1px solid #af8e8e;
+    padding: 30px;
+
+}
+
+.top-image {
+    width: 35%;
+    max-height: 250px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.style1 {
+    color: rgb(136, 57, 64);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.style2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Rosarivo', cursive;
+    font-size: 18px;
+    padding: 20px;
+}
+
+section figure {
+    flex-grow: 1;
+
+}
+
+section article {
+    text-align: center;
+    flex-grow: 2;
+    font-size: 1em;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+
+section article h1 {
+    font-size: 2em;
+    margin: 1em;
+}
+
+section article h3 {
+    margin: 1em;
+    margin-bottom: 3em;
+}
+
+
+
+

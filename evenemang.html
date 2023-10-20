@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenemang - Pärmar och Poesi</title>
+    <!-- seo tag -->
+    <meta name="description" content="Kommande evenemang på Pärmar och Poesi"/>
+
+    <!--css-->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/sass.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style-sta/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-pop/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-pop/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-pop/favicon-16x16.png">
+    <link rel="manifest" href="favicon-pop/site.webmanifest">
+
+</head>
+<body>
+
+    <header class="leading-4">
+		<nav>
+
+			<!--Logotyp och länk till förstasidan-->
+			<a href="index.html" name="Förstasidan">
+				<img class="logoimage" src="img/pop-logo3.png" width="200" height="75" alt="Pärmar och poesis logotyp">
+			</a>
+
+			<!--Knapp för att visa menyn-->
+			<button onclick="toggleClass()" class="menu-button" type="button" id="menuButton" name="Meny">
+				<i class="fas fa-bars menu-icon"></i>
+			</button>
+
+			<!--Dropdownmeny för mobil-->
+				<menu id="menuDropdown">
+					<li><a href="nyheter.html" name="Nyheter">NYHETER</a></li>
+					<li><a href="#" name="Böcker">BÖCKER</a></li>
+					<li><a href="evenemang.html" name="Evenemang">EVENEMANG</a></li>
+					<li><a href="om-oss.html" name="Om">OM OSS</a></li>
+					<li><a href="kontakt.html" name="Kontakt">KONTAKT</a></li>
+				</menu>
+
+		</nav>
+	</header>
+
+<!-- main page content div -->
+<main class="evenemang-main">
+        <!-- content -->
+        <section class="main-section">
+    <h1 class="text-5xl font-bold underline text-center mb-8">
+        Evenemang
+    </h1>
+
+    <!-- event main div -->
+    <section class="evenemang-list-center">
+        <!-- event -->
+        <div class="ev-border">
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Kärleksromanskväll</h2>
+            <p class="ev-list-item align-middle pt-0 md:p-2">Utforska de mest romantiska berättelserna genom tiderna och låt dig förföras av hjärtats skönhet och lidande. Vi samlas för att hylla den romantiska litteraturens förtrollande värld. Kom och låt dig svepas bort av kärlekens poesi och berättelser i en atmosfär av ändlös romantik.</p>
+            <p class="ev-list-item pt-0 md:p-2">17:00 till 20:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-10-19</p>
+        </article>
+        </div>
+        <!-- event -->
+        <div class="ev-border">
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Boksignering</h2>
+            <p class="ev-list-item pt-0 md:p-2">"Välkommen till vår boksignering med författaren Syed Callahan! Kom och träffa författaren personligen, få din bok signerad och ta del av en spännande diskussion om den senaste boken. Detta är en unik chans att fördjupa dig i berättelsen och möta författaren bakom orden. Vi ser fram emot att träffa dig!"</p>
+            <p class="ev-list-item pt-0 md:p-2">15:00 till 18:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-10-26</p>
+        </article>
+        </div>
+
+        <div class="ev-border">
+        <!-- event -->
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Litteraturens dystopi</h2>
+            <p class="ev-list-item pt-0 md:p-2">Sjunk in i en värld av total övervakning och undertryckande regimer i detta dystopiska litterära evenemang. Utforska likheterna och olikheterna mellan George Orwells "1984", Karin Boyes "Kallocain" och Ray Bradburys "Fahrenheit 451". Diskutera maktens missbruk, samt censur av litteratur. Ett tillfälle att granska de mörka sidorna av samhället genom dessa klassiska dystopiska mästerverk.</p>
+            <p class="ev-list-item pt-0 md:p-2">13:00 till 18:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-11-11</p>
+        </article>
+        </div>
+
+        <div class="ev-border">
+        <!-- event -->
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Episk poesi</h2>
+            <p class="ev-list-item pt-0 md:p-2">Välkommen till en oförglömlig kväll av episk poesi! Upplev mästerliga berättelser och gripande verser som tar dig på en resa genom tid och mytologi. Våra diktare kommer att föra dig till en värld av hjältar, gudar och episka äventyr, där ord blir vapen och rim blir sånger. Detta är en kväll fylld med kraftfulla berättelser och lyrisk skönhet som du inte vill missa. Kom och fördjupa dig i den tidlösa konsten av episk poesi och låt dig svepas med av ordens kraft.</p>
+            <p class="ev-list-item pt-0 md:p-2">17:00 till 19:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-11-18</p>
+        </article>
+        </div>
+
+        <div class="ev-border">
+        <!-- event -->
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Haiku-kväll</h2>
+            <p class="ev-list-item pt-0 md:p-2">Välkommen till vår Haiku Poesikväll! Upplev skönheten i det korta formatet när poesi från när och fjärran delar med sig av sina känslor och tankar i tre enkla rader. Kom och njut av en kväll fylld med ordens subtila kraft och naturinspiration. Detta är konsten att säga mycket med väldigt lite.</p>
+            <p class="ev-list-item pt-0 md:p-2">17:00 till 19:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-11-25</p>
+        </article>
+        </div>
+
+        <div class="ev-border">
+        <!-- event -->
+        <article class="evenemang-list">
+            <h2 class="ev-list-item ev-h2-list-item text-2xl text-center">Jullitteratur</h2>
+            <p class="ev-list-item pt-0 md:p-2">Välkomna till vårt stämningsfulla julboksevenemang! Fira säsongen med oss när vi samlas för att fördjupa oss i julens magi genom fantastisk litteratur. Upplev hjärtvärmande berättelser, juliga dikter och skapa minnen tillsammans med andra bokälskare. Det blir en kväll fylld av läsning, gemenskap och julglädje. Vi ser fram emot att sprida julens ande tillsammans med er!</p>
+            <p class="ev-list-item pt-0 md:p-2">14:00 till 17:00</p>
+            <p class="ev-last-list-item pt-0 md:p-2">2023-12-16</p>
+        </article>
+        </div>
+
+    </section>
+
+
+
+        </section>
+
+
+</main>
+
+<!--Footer----------------------------------->
+
+<footer>
+    <!--Länkar till sociala medier som öppnas i en ny flik/fönster, länk för att öppna ett nytt epostmeddelande, länk för att ringa på mobiltelefon-->
+    <a href="kontakt.html" target="_blank" name="Kontakt"><i class="fas fa-address-book"></i></a>
+    <a href="mailto:info@parmarochpoesi.se" target="_blank" name="info@parmarochpoesi.se"><i class="fas fa-at"></i></a>
+    <a href="tel:08123456" target="_blank" name="Telefonnummer:08123456"><i class="fas fa-phone"></i></a>
+    <a href="http://instagram.com/parmarochpoesi" target="_blank" name="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="http://m.facebook.com/parmar.och.poesi" target="_blank" name="Facebook"><i class="fab fa-facebook-square"></i></a>
+    <a href="http://m.me/parmar.och.poesi" target="_blank" name="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+    <a href="http://x.com/ParmarOchPoesi" target="_blank" name="Twitter"><i class="fab fa-twitter"></i></a>
+</footer>
+
+
+<!--Javascript för att öppna menyn i mobilläge-->
+<script>
+var menuButton = document.querySelector("#menuButton");
+var menuDropdown = document.querySelector("#menuDropdown");
+
+        menuButton.addEventListener("click", function () {
+            menuDropdown.classList.toggle("open");
+            });
+
+</script>
+
+
+</body>
+</html>
